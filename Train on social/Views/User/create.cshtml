@@ -1,0 +1,38 @@
+﻿@using DAL.Entites;
+@model user;
+
+@{
+    ViewData["Title"] = "create";
+}
+
+
+
+<form asp-action="create" asp-controller="User">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Username</label>
+        <input asp-for ="username" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter User Name">
+        <span class="text-danger" asp-validation-for="username ">   </span>
+   
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input asp-for="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <span class="text-danger" asp-validation-for="email ">   </span>
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input asp-for="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        <span class="text-danger" asp-validation-for="password ">   </span>
+
+    </div>
+   
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+<script src="d:\projects\itcprojects\project c# itc\train on social\train on social\wwwroot\lib\jquery-validation\dist\additional-methods.min.js"></script>
+<script src="d:\projects\itcprojects\project c# itc\train on social\train on social\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js"></script>
+
+

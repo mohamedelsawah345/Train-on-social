@@ -1,0 +1,8 @@
+﻿@using DAL.Entites;
+@model List<user>
+
+    @foreach(var user in Model)
+    {
+
+        <p> @user.id  @user.username  @user.email    </p>
+    }
